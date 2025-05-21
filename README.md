@@ -72,6 +72,32 @@ The challenge includes:
 
 - Use trained model to forecast Jan 2018, Q1 2018, and full year 2018 revenue.
 
+## Technical Architecture
+
++--------------------+      +--------------------+      +-------------------------+
+| Opportunities Data | ---> |  Data Preprocessor | ---> | Feature Engineering     |
++--------------------+      +--------------------+      +-------------------------+
+                                                           |        |
++----------------------+      +---------------------------+        v
+| Email Interactions   | ---> | NLP Feature Extraction (Sentiment, TF-IDF, etc.) |
++----------------------+      +--------------------------------------------------+
+                                                                    |
+                                                                    v
+                                                        +------------------------+
+                                                        | ML Models              |
+                                                        | - Classification       |
+                                                        | - Regression           |
+                                                        +------------------------+
+                                                                    |
+                                                                    v
+                                                        +------------------------+
+                                                        | Revenue Forecasting    |
+                                                        | - Monthly              |
+                                                        | - Quarterly            |
+                                                        | - Annual               |
+                                                        +------------------------+
+
+
 ## Algorithms Used
 
 ### - NLP:
