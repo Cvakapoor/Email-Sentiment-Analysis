@@ -79,9 +79,19 @@ flowchart TD
     A[Opportunities Data] --> B[Data Preprocessing]
     C[Email Interactions] --> B
     B --> D[Feature Engineering]
-    D --> E[NLP Feature Extraction\n(Sentiment, TF-IDF)]
-    E --> F[ML Models\n(Classifier, Regressor)]
-    F --> G[Revenue Forecast\n(Monthly, Quarterly, Annual)]
+    D --> E[NLP Features: Sentiment & TF-IDF]
+    E --> F[ML Models: Classifier and Regressor]
+    F --> G[Revenue Forecast: Month / Quarter / Year]
+```
+## ML Pupeline Diagram
+
+```mermaid
+flowchart TD
+    A[Raw CRM Data 2016–2017] --> B[Data Cleaning]
+    B --> C[Feature Engineering with NLP]
+    C --> D[Model Training: RF, GBT, LR]
+    D --> E[Revenue Prediction = Win Prob × Deal Size]
+    E --> F[Evaluation: Backtesting Accuracy]
 ```
 
 ## Algorithms Used
