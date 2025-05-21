@@ -75,7 +75,7 @@ The challenge includes:
 ## Technical Architecture
 
 ```mermaid
-flowchart TD
+flowchart LR
     A[Opportunities Data] --> B[Data Preprocessing]
     C[Email Interactions] --> B
     B --> D[Feature Engineering]
@@ -86,7 +86,7 @@ flowchart TD
 ## ML Pipeline Diagram
 
 ```mermaid
-flowchart TD
+flowchart LR
     A[Raw CRM Data 2016–2017] --> B[Data Cleaning]
     B --> C[Feature Engineering with NLP]
     C --> D[Model Training: RF, GBT, LR]
