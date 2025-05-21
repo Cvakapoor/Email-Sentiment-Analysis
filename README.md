@@ -74,29 +74,14 @@ The challenge includes:
 
 ## Technical Architecture
 
-```plaintext
-+--------------------+      +--------------------+      +-------------------------+
-| Opportunities Data | ---> |  Data Preprocessor | ---> | Feature Engineering     |
-+--------------------+      +--------------------+      +-------------------------+
-                                                           |        |
-+----------------------+      +---------------------------+        v
-| Email Interactions   | ---> | NLP Feature Extraction (Sentiment, TF-IDF, etc.) |
-+----------------------+      +--------------------------------------------------+
-                                                                    |
-                                                                    v
-                                                        +------------------------+
-                                                        | ML Models              |
-                                                        | - Classification       |
-                                                        | - Regression           |
-                                                        +------------------------+
-                                                                    |
-                                                                    v
-                                                        +------------------------+
-                                                        | Revenue Forecasting    |
-                                                        | - Monthly              |
-                                                        | - Quarterly            |
-                                                        | - Annual               |
-                                                        +------------------------+
+```mermaid
+flowchart TD
+    A[Opportunities Data] --> B[Data Preprocessing]
+    C[Email Interactions] --> B
+    B --> D[Feature Engineering]
+    D --> E[NLP Feature Extraction]
+    E --> F[ML Models<br/>(Classifier + Regressor)]
+    F --> G[Revenue Forecast<br/>Month/Quarter/Year]
 ```
 
 ## Algorithms Used
