@@ -79,9 +79,9 @@ flowchart TD
     A[Opportunities Data] --> B[Data Preprocessing]
     C[Email Interactions] --> B
     B --> D[Feature Engineering]
-    D --> E[NLP Feature Extraction]
-    E --> F[ML Models<br/>(Classifier + Regressor)]
-    F --> G[Revenue Forecast<br/>Month/Quarter/Year]
+    D --> E[NLP Feature Extraction\n(Sentiment, TF-IDF)]
+    E --> F[ML Models\n(Classifier, Regressor)]
+    F --> G[Revenue Forecast\n(Monthly, Quarterly, Annual)]
 ```
 
 ## Algorithms Used
