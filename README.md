@@ -74,6 +74,7 @@ The challenge includes:
 
 ## Technical Architecture
 
+```plaintext
 +--------------------+      +--------------------+      +-------------------------+
 | Opportunities Data | ---> |  Data Preprocessor | ---> | Feature Engineering     |
 +--------------------+      +--------------------+      +-------------------------+
@@ -96,7 +97,7 @@ The challenge includes:
                                                         | - Quarterly            |
                                                         | - Annual               |
                                                         +------------------------+
-
+```
 
 ## Algorithms Used
 
