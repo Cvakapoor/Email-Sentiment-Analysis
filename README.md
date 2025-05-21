@@ -83,7 +83,7 @@ flowchart TD
     E --> F[ML Models: Classifier and Regressor]
     F --> G[Revenue Forecast: Month / Quarter / Year]
 ```
-## ML Pupeline Diagram
+## ML Pipeline Diagram
 
 ```mermaid
 flowchart TD
